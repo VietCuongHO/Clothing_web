@@ -1,0 +1,40 @@
+.option{
+    width: 100%;
+    background-color: #f3f2ee;
+    padding: 40px 0;
+    .container{
+        margin: 0 auto;
+        padding: 0 15px;
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            .option-text {
+                padding: 0 15px;
+                h4 {
+                    color: #111;
+                    font-weight: 700;
+                    font-size: 24px;
+                    margin-bottom: 8px;
+                }
+                &-links {
+                    font-size: 15px;
+                    a {
+                        margin-right: 18px;
+                        color: #111;
+                        position: relative;
+                        &::after {
+                            position: absolute;
+                            content: ">";
+                            top: 0;
+                            right: -14px;
+                        }
+                    }
+                    span {
+                        color: #b7b7b7;
+                    }
+                }
+            }
+        }
+    }
+}

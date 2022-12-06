@@ -1,0 +1,71 @@
+.quote {
+    background-color: #f3f2ee;
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            .quote-text {
+                flex: 0 0 50%;
+                max-width: 50%;
+                text-align: center;
+                padding: 0 100px;
+                span {
+                    color: #e53637;
+                    font-size: 72px;
+                }
+                & > p {
+                    padding-top: 12px;
+                    margin-bottom: 30px;
+                    font-style: italic;
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #111;
+                    line-height: 25px;
+                }
+                .author {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    &-ava {
+                        margin-right: 20px;
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                        }
+                    }
+                    &-name {
+                        h5 {
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 1.2;
+                            margin-bottom: 5px;
+                        }
+                        p {
+                            font-size: 20px;
+                            font-style: italic;
+                            line-height: 30px;
+                            font-weight: 400;
+                            color: #b7b7b7;
+                        }
+                    }
+                }
+            }
+            .quote-pic {
+                flex: 0 0 50%;
+                max-width: 50%;
+                img {
+                   max-height: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

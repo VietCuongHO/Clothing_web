@@ -1,0 +1,28 @@
+html{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 62.5%;
+}
+body{
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+// PC
+@media (min-width: 1024px){
+    .container,.menu-container,.hero-container,.banner-container,.product-container,.deals-container,.instagram-container,.news-container,.footer-container{
+        max-width: 1170px;
+    }
+}
+
+// Tablet
+@media (min-width: 740px) and (max-width: 1023px){
+    .container,.menu-container,.hero-container,.banner-container,.product-container,.deals-container,.instagram-container,.news-container,.footer-container{
+        max-width: 960px;
+    }
+}  
+// Mobile
+@media (max-width: 739px){
+    .container,.menu-container,.hero-container,.banner-container,.product-container,.deals-container,.instagram-container,.news-container,.footer-container{
+        max-width: 540px;
+    }
+}  

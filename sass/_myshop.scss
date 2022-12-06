@@ -1,0 +1,282 @@
+.myshop {
+    padding: 40px 0;
+    padding: 100px 0;
+    .container {
+        margin: 0 auto;
+        padding: 0 15px;
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            &-left {
+                padding: 0 15px;
+                flex: 0 0 25%;
+                max-width: 25%;
+                .shop-sidebar {
+                    padding-right: 20px;
+                    .search-input {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 1px 2px 1px 20px;
+                        border: 1px solid #e5e5e5;
+                        border-radius: 4px;
+                        font-size: 15px;
+                        height: 42px;
+                        margin-bottom: 45px;
+                        input {
+                            color: #b7b7b7;
+                            &::placeholder {
+                                color: #b7b7b7;
+                            }
+                        }
+                        button {
+                            color: #b7b7b7;
+                            background-color: transparent;;
+                            padding: 0 15px;
+                            height: 100%;
+                        }
+                    }
+                    .selection {
+                        .card {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            margin-bottom: 25px;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            &-heading {
+                                position: relative;
+                                a {
+                                    font-size: 16px;
+                                    color: #111;
+                                    font-weight: 700;
+                                    i {
+                                        position: absolute;
+                                        font-weight: 700;
+                                        color: rgb(17, 17, 17);
+                                        right: 0;
+                                        top: 3px;
+                                    }
+                                }              
+                            }
+                            &-body {
+                                padding: 10px 0 20px 0;
+                                border-bottom: 1px solid rgb(229, 229, 229);
+                                &:last-child{
+                                    border: none;
+                                }
+                                .scroll {
+                                    height: 225px;
+                                }
+                                ul {
+                                    overflow-y: auto;
+                                    li {
+                                        a {
+                                            color: #b7b7b7;
+                                            font-size: 15px;
+                                            line-height: 32px;
+                                            transition: all .3s;
+                                            &:hover {
+                                                color: #111;
+                                            }
+                                        }
+                                    }
+                                }
+                                .size {
+                                    display: inline-block;
+                                    font-size: 15px;
+                                    font-weight: 700;
+                                    border: 1px solid #e5e5e5;
+                                    padding: 6px 25px;
+                                    margin-bottom: 10px;
+                                    margin-right: 5px;
+                                    cursor: pointer;
+                                    input {
+                                        position: absolute;
+                                        visibility: hidden;
+                                    }
+                                    &:hover {
+                                        background-color: #111;
+                                        color: #fff;
+                                    }
+                                }
+                                .color{
+                                    position: relative;
+                                    display: inline-block;
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    margin: 0 10px 10px 0;
+                                    cursor: pointer;
+                                    input {
+                                        position: absolute;
+                                        visibility: hidden;
+                                    }
+                                }
+                                .color::after {
+                                    content: "";
+                                    position: absolute;
+                                    width: 36px;
+                                    height: 36px;
+                                    top: -4px;
+                                    left: -4px;
+                                    border: 1px solid #e5e5e5;
+                                    border-radius: 50%;
+                                }
+                                #color-1 {
+                                    background: #0b090c;
+                                }
+                                #color-2 {
+                                    background: #20315f;
+                                }
+                                #color-3 {
+                                    background: #f1af4d;
+                                }
+                                #color-4 {
+                                    background: #636068;
+                                }
+                                #color-5 {
+                                    background: #57594d;
+                                }
+                                #color-6 {
+                                    background: #e8bac4;
+                                }
+                                #color-7 {
+                                    background: #d6c1d7;
+                                }
+                                #color-8 {
+                                    background: #ed1c24;
+                                }
+                                #color-9 {
+                                    background: #ffffff;
+                                }
+                                .tag {
+                                    display: inline-block;
+                                    color: #404040;
+                                    padding: 5px 18px;
+                                    margin: 6px 10px;
+                                    background-color: #f1f5f8;
+                                    font-size: 13px;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &-right {
+                flex: 0 0 75%;
+                max-width: 75%;
+                padding: 0 15px;
+                .showtool {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 -15px;
+                    &-left, &-right {
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                        padding: 0 15px;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 25px;
+                        margin-bottom: 15px;
+                    }
+                    &-right {
+                        text-align: right;
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .product-list{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 -15px;
+                    &-item{
+                        flex: 0 0 calc(100% / 3);
+                        max-width: calc(100% / 3);
+                        padding: 0 15px;
+                        & .item{
+                            margin-bottom: 40px;
+                            &-pic{
+                                position: relative;
+                                & .label-new, .label-sale{
+                                    position: absolute;
+                                    left: 0;
+                                    top: 20px;
+                                    color: #111111;
+                                    padding: 4px 15px 2px;
+                                    font-size: 1.1rem;
+                                    font-weight: 700;
+                                    letter-spacing: 2px;
+                                    text-transform: uppercase;
+                                }
+                                & .label-new{
+                                    background-color: #fff;
+                                    color: #111111;
+                                }
+                                & .label-sale{
+                                    background-color: #111111;
+                                    color: #fff;
+                                }
+                            }
+                            &-text{
+                                padding-top: 25px;
+                                & h6{
+                                    color: #111111;
+                                    font-size: 1.5rem;
+                                    font-weight: 600;
+                                    margin-bottom: 5px;
+                                }
+                                & .rating{
+                                    margin-bottom: 6px;
+                                    font-size: 1.4rem;
+                                }
+                                & h5{
+                                    color: #0d0d0d;
+                                    font-size: 1.8rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .pagnition {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 -15px;
+                    &-container {
+                        padding: 0 15px;
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                        .pagnition-list {
+                            padding-top: 15px;
+                            text-align: center;
+                            a, span {
+                                margin-right: 10px;
+                                font-size: 16px;
+                                font-weight: 700;
+                                color: #111;
+                                transition: ease .3s;
+                            }
+                            a {
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                                &:hover {
+                                    padding: 3px 5px;
+                                    border: 1px solid #111;
+                                    border-radius: 50%;
+                                    background-color: #ed1c24;
+                                    color: #e5e5e5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

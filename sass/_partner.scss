@@ -1,0 +1,47 @@
+.partner {
+    .container {
+        margin: 0 auto;
+        padding: 0 15px 70px;
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            &-title {
+                padding: 0 15px;
+                flex: 0 0 100%;
+                .team-title {
+                    text-align: center;
+                    margin-bottom: 45px;
+                    span {
+                        display: block;
+                        color: #e53637;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        margin-bottom: 15px;
+                    }
+                    h2 {
+                        font-weight: 700;
+                        line-height: 46px;
+                        font-size: 36px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            &-item {
+                padding: 0 15px;
+                flex: 0 0 calc(100%  /4);
+                max-width: calc(100% / 4);
+                a {
+                    display: block;
+                    margin-bottom: 75px;
+                    text-align: center;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

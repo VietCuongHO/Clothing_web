@@ -1,0 +1,52 @@
+.instagram{
+    padding-top: 100px;
+    &-container{
+        padding: 0 15px;
+        margin: 0 auto;
+        & .instagram-row{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            &-left{
+                flex: 0 0 66.7%;
+                max-width: 66.7%;
+                padding: 0 15px;
+                & .ig-pic{
+                    &-item{
+                        img{
+                        width: calc(100% / 3);
+                        height: 261px;
+                        float: left;
+                        }
+                    }
+                }
+            }
+            &-right{
+                flex: 0 0 33.3%;
+                max-width: 33.3%;
+                padding: 0 15px;
+                & .ig-text{
+                    padding-top: 130px;
+                    & h2{
+                        margin-bottom: 30px;
+                        font-size: 3.6rem;
+                        font-weight: 700;
+                        color: #111;
+                    }
+                    & p{
+                        margin-bottom: 65px;
+                        font-size: 1.5rem;
+                        color: #3d3d3d;
+                        line-height: 25px;
+                        font-weight: 400;
+                    }
+                    & h3{
+                        color: #e53637;
+                        font-size: 3rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

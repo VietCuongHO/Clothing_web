@@ -1,0 +1,41 @@
+.about-us {
+    padding: 100px 0 70px 0;
+    .container {
+        margin: 0 auto;
+        padding: 0 15px;
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            .about-pic {
+                padding: 0 15px;
+                .pic-item {
+                    margin-bottom: 35px;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+            .about-text {
+                padding: 0 15px;
+                flex: 0 0 calc(100%  / 3);
+                max-width: calc(100% / 3);
+                .about-item {
+                    margin-bottom: 30px;
+                    h4 {
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: #111;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: #3d3d3d;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

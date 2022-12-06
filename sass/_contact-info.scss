@@ -1,0 +1,96 @@
+.contact-info {
+    padding: 100px 0;
+    .container {
+        margin: 0 auto;
+        padding: 0 15px;
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            .col-left {
+                flex: 0 0 50%;
+                max-width: 50%;
+                .text-container {
+                    padding: 0 15px;
+                    p {
+                        font-size: 15px;
+                        color: #707070;
+                        line-height: 26px;
+                    }
+                    .title {
+                        margin-bottom: 40px;
+                        span {
+                            display: block;
+                            color: #e53637;
+                            font-size: 14px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                            margin-bottom: 15px;
+                        }
+                        h2 {
+                            font-size: 48px;
+                            color: #111;
+                            font-weight: 700;
+                            margin-bottom: 18px;
+                            line-height: 46px;
+                        }             
+                    }
+                    ul {
+                        p {
+                            color: #3d3d3d;
+                        }
+                        li {
+                            margin-bottom: 24px;
+                        }
+                        h4 {
+                            font-size: 24px;
+                            margin-bottom: 8px;
+                            font-weight: 700;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+            .col-right {
+                flex: 0 0 50%;
+                max-width: 50%;
+                input {
+                    color: #b7b7b7;
+                    width: 100%;
+                    border: 1px solid #e1e1e1;
+                }
+                .name, .email {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                    padding: 0 15px;
+                    input {
+                        padding: 1px 2px 1px 20px;
+                        height: 50px;
+                        margin-bottom: 30px;
+                    }
+                }
+                .message {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    padding: 0 15px;
+                    input {
+                        top: 0;
+                        height: 150px;
+                        padding: 12px 2px 2px 20px;
+                        margin-bottom: 24px;
+                    }
+                    button {
+                        padding: 14px 35px;
+                        background-color: #111;
+                        color: #fff;
+                        letter-spacing: 4px;
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

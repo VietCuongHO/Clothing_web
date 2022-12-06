@@ -1,0 +1,55 @@
+.my-team {
+    padding: 100px 0 70px 0;
+    .container {
+        margin: 0 auto;
+        padding: 0 15px 70px;
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            &-title {
+                padding: 0 15px;
+                flex: 0 0 100%;
+                .team-title {
+                    text-align: center;
+                    margin-bottom: 45px;
+                    span {
+                        display: block;
+                        color: #e53637;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        margin-bottom: 15px;
+                    }
+                    h2 {
+                        font-weight: 700;
+                        line-height: 46px;
+                        font-size: 36px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            &-item {
+                flex: 0 0 calc(100% / 5);
+                max-width: calc(100% / 5);
+                padding: 0 15px;
+                .member {
+                    margin-bottom: 30px;
+                    img {
+                        margin-bottom: 25px;
+                        max-width: 100%;
+                    }
+                    h4{
+                        margin-bottom: 8px;
+                        font-size: 24px;
+                    }
+                    span{
+                        font-size: 15px;
+                        color: #b7b7b7;
+                    }
+                }
+            }
+        }
+    }
+}

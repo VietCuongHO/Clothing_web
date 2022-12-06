@@ -1,0 +1,165 @@
+.header{
+    height: 130.01px;
+    width: 100%;
+    &-top{
+        height: 45.6px;
+        background-color: #111111;
+        padding: 10px 0;
+        display: block;
+        & .container{
+            margin: 0 auto;
+            padding: 0 15px;
+            & .row{
+                display: flex;
+                flex-wrap: wrap;
+                color: #fff;
+                margin: 0 -15px;
+                & .top-left{
+                    flex: 0 0 50%;
+                    padding: 0 15px;
+                    & p{
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        line-height: 25px;
+                    }
+                }
+                & .top-right{
+                    font-size: 1.3rem;
+                    flex: 0 0 50%;
+                    text-align: right;
+                    padding: 0 15px;
+                    letter-spacing: 2px;
+                    line-height: 25px;
+                    &-links{
+                        display: inline-block;
+                        margin-right: 25px;
+                        & a{
+                            color: #fff;
+                        }
+                        & .signin{
+                            margin-right: 28px;
+                        }
+                    }
+                    &-hover{
+                        display: inline-block;
+                        position: relative;
+                        &:hover ul{
+                            position: absolute;
+                            display: block;
+                            cursor: pointer;
+                        }
+                        & ul{
+                            display: none;
+                            background-color: #fff;
+                            box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+                            & li{
+                                padding: 2px 15px;
+                                display: block;
+                                &:hover{
+                                    background-color: #ccc;
+                                }
+                                & a{
+                                    color: #111111;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .menu-container{
+        margin: 0 auto;
+        padding: 0 15px;
+            & .menu-row{
+                display: flex;
+                flex-wrap: wrap;
+                color: #fff;
+                margin: 0 -15px;
+                & .header-logo{
+                    line-height: 0;
+                    flex: 0 0 25%;
+                    padding: 30px 0;
+                    & a{
+                        display: inline-block;
+                        padding: 0 15px;
+                    }
+                }
+                & .header-nav{
+                    flex: 0 0 50%;
+                    padding: 0 15px;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    &-list{
+                        padding: 26px 0;
+                        & > ul{  
+                            display: flex;
+                            justify-content:space-around;
+                            align-items: center;
+                            & > li{
+                                position: relative;
+                                & > a{
+                                    color: rgb(33, 37, 41);
+                                    &:first-child:active {
+                                        border-bottom: 2px solid #dc3545;
+                                    }
+                                }
+                                & .dropdown{
+                                    display: none;
+                                    position: absolute;
+                                    font-size: 1.4rem;
+                                    font-weight: 400;
+                                    width: 150px;
+                                    background-color: #111111;
+                                    & li{
+                                        padding: 5px 20px;
+                                        & a{
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                                &:hover .dropdown{
+                                    display: block;
+                                }
+                            }
+                            & > li:hover > a{
+                                border-bottom: 2px solid #dc3545;
+                            }
+                        }
+                    }
+                }
+                & .header-navOption{
+                    flex: 0 0 25%;
+                    color: #111111;
+                    padding: 0 15px;
+                    font-size: 1.6rem;
+                    &-list{
+                        padding: 26px 0;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        font-weight: 700;
+                        & a{
+                            margin-right: 26px;
+                            color: #111111;
+                            position: relative;
+                            & span{
+                                padding: 1px 2px;
+                                border-radius: 50%;
+                                background-color: red;
+                                color: #fff;
+                                position: absolute;
+                                font-size: 1.1rem;
+                                top: -9px;
+                                left: 13px;
+                            }
+                        }
+                        & .price{
+                            margin-left: -4px;
+                            color: #111;
+                        }
+                    }
+                }
+            }
+    }
+}
